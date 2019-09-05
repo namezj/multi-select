@@ -1,0 +1,50 @@
+<form bindsubmit="formSubmit" bindreset="formReset" class="formWrapper">
+  <view class="section">
+    <view class="section__title">培训科目</view>
+    <view class="section__content">
+     {{chooseArray}}
+    </view>
+    <view class="section__btn"><right-picker bind:chooseEvent='choose' chooseList='{{ chooseList }}' multiple='{{ multiple }}'></right-picker></view>
+  </view>
+  <view class="section">
+    <view class="section__title">年级</view>
+    <view class="section__content">
+      <picker bindchange="bindGradeChange" value="{{index}}" range="{{grade}}">
+        <view class="picker">
+          {{grade[gradeIndex]}}
+        </view>
+      </picker>
+    </view>
+
+  </view>
+  <view class="section">
+    <view class="section__title">上课地址</view>
+    <view class="section__content">
+      <input name="address" placeholder="请输入上课地址" />
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">家长预算</view>
+    <view class="section__content">
+      <input name="budget" type="digit" placeholder="请输入预算" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section__title">上课时间段描述</view>
+    <view class="section__content">
+      <input name="describe" placeholder="请输入上课时间段描述" />
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">联系方式</view>
+    <view class="section__content">
+      <input name="contact" placeholder="请输入联系方式" />
+    </view>
+
+  </view>
+  <view class="btn-area">
+    <button class="btn" form-type="submit">Submit</button>
+    <button class="btn" form-type="reset">Reset</button>
+  </view>
+</form>

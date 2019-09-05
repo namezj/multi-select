@@ -1,0 +1,27 @@
+page{
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.btn-area{
+  display: flex;
+}
+.btn-area .btn{
+  flex: 1;
+  margin-top: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.section{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.section .section__title{
+  flex: 0 0 240rpx;
+}
+.section .section__content{
+  flex: 1;
+}
+.section__btn{
+  flex: 0 0 120rpx;
+}
